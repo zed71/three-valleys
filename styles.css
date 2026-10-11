@@ -1,0 +1,126 @@
+:root {
+  --ink: #122018;
+  --ink-soft: #3a4a40;
+  --wine: #6e1f3a;
+  --wine-deep: #3d1224;
+  --leaf: #3f6b52;
+  --brass: #b8a06a;
+  --mist: #d7e4db;
+  --font-display: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  --font-body: Candara, "Segoe UI", Calibri, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--ink);
+  font-family: var(--font-body);
+  background:
+    radial-gradient(120% 80% at 8% -12%, rgba(110, 31, 58, 0.35), transparent 55%),
+    radial-gradient(90% 70% at 110% 8%, rgba(63, 107, 82, 0.4), transparent 52%),
+    linear-gradient(160deg, #0f1a14 0%, #1a2820 42%, #24151c 100%);
+}
+
+.shell {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 28px 20px 48px;
+}
+
+.hero {
+  padding: 8px 4px 18px;
+}
+
+.brand {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 32px;
+  letter-spacing: 0.02em;
+  color: var(--mist);
+}
+
+.headline {
+  margin: 8px 0 0;
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--brass);
+}
+
+.lede {
+  margin: 10px 0 0;
+  font-size: 14px;
+  line-height: 1.45;
+  color: rgba(215, 228, 219, 0.78);
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin: 0 4px 16px;
+}
+
+nav a {
+  color: var(--mist);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+  border-bottom-color: var(--brass);
+  color: #eef6f0;
+}
+
+.panel {
+  background: #eef3ef;
+  border-radius: 14px;
+  padding: 22px 22px 32px;
+  box-shadow: 0 18px 40px rgba(8, 16, 12, 0.28);
+}
+
+.panel h2 {
+  margin: 1.4em 0 0.4em;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: var(--wine-deep);
+}
+
+.panel h2:first-child {
+  margin-top: 0;
+}
+
+.panel p,
+.panel li {
+  color: var(--ink-soft);
+  line-height: 1.55;
+  font-size: 15px;
+}
+
+.panel ul {
+  padding-left: 1.2em;
+}
+
+.panel a {
+  color: var(--wine);
+}
+
+footer {
+  margin: 18px 4px 0;
+  font-size: 13px;
+  color: rgba(215, 228, 219, 0.65);
+}
